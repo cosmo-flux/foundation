@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -51,11 +51,22 @@
    * main configuration for component dependency resolution.
    **/
   "teambit.dependencies/dependency-resolver": {
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@cosmo-flux/design.data-display.avatar": "^0.0.1",
+        "@cosmo-flux/design.data-display.tooltip": "^0.0.1",
+        "@cosmo-flux/design.data-display.typography": "^0.0.1",
+        "@cosmo-flux/design.inputs.button": "^0.0.1",
+        "@cosmo-flux/design.layout.box": "^0.0.1",
+        "@cosmo-flux/design.material-ui-theme": "^0.0.1",
+        "@cosmo-flux/design.navigation.menu": "^0.0.1",
+        "@cosmo-flux/design.surfaces.app-bar": "^0.0.1",
+        "@mui/icons-material": "^6.4.3"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true

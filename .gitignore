@@ -1,3 +1,6 @@
 .bit
 node_modules
 pnpm-lock.yaml
+.eslintrc.json
+.prettierrc.cjs
+tsconfig.json

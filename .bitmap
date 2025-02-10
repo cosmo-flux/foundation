@@ -9,5 +9,19 @@
  */
 
 {
+    "subscriber": {
+        "name": "subscriber",
+        "scope": "cosmo-flux.foundation",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "foundation/subscriber"
+    },
+    "ui/header": {
+        "name": "ui/header",
+        "scope": "cosmo-flux.foundation",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "foundation/ui/header"
+    },
     "$schema-version": "17.0.0"
 }
